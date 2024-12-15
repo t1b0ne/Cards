@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles.css">
+  <title>Cards Against Humanity</title>
+</head>
+<body>
+  <div class="game-container">
+    <h1>Cards Against Humanity</h1>
+
+    <!-- Area del juego -->
+    <div id="game-area">
+      <!-- Cartas negras -->
+      <div id="black-card" class="card-container">
+        <p>Black card will appear here.</p>
+      </div>
+
+      <!-- Cartas blancas -->
+      <div id="white-cards" class="card-container">
+        <p>Your white cards will appear here.</p>
+      </div>
+    </div>
+
+    <!-- Lista de jugadores activos -->
+    <div id="players-list">
+      <h3>Players</h3>
+      <ul id="players"></ul>  <!-- Lista dinámica de jugadores -->
+    </div>
+
+    <!-- Chat -->
+    <div id="chat">
+      <h3>Chat</h3>
+      <div id="messages"></div>  <!-- Área de mensajes -->
+      <input type="text" id="chat-input" placeholder="Write a message..." />
+      <button id="send-message">Send</button>
+    </div>
+  </div>
+
+  <!-- Conectar el socket.io -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

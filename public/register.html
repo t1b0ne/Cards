@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets\styles.css">
+  <title>Registro / Inicio de Sesión</title>
+</head>
+<body>
+  <div class="register-container">
+    <h1>Registro de Jugadores</h1>
+    <form action="register.php" method="POST" id="register-form">
+      <label for="username">Nombre de Usuario:</label>
+      <input type="text" id="username" name="username" required>
+      <button type="submit">Registrar</button>
+    </form>
+
+    <h1>Iniciar Sesión</h1>
+    <form action="login.php" method="POST" id="login-form">
+      <label for="login-username">Nombre de Usuario:</label>
+      <input type="text" id="login-username" name="username" required>
+      <button type="submit">Iniciar Sesión</button>
+    </form>
+  </div>
+
+  <!-- Incluir el script de Socket.IO desde el servidor -->
+  <script src="/socket.io/socket.io.js"></script>
+
+  <!-- Tu archivo de cliente que contiene la lógica de interacción -->
+  <script src="client.js"></script>
+
+</body>
+</html>

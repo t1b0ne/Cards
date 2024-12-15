@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/styles.css">
+  <title>Cards Against Humanity</title>
+</head>
+<body>
+  <div class="game-container">
+    <h1>Cards Against Humanity</h1>
+    <div id="players-list">
+      <h3>Jugadores:</h3>
+      <ul id="players"></ul>
+    </div>
+    <div id="game-area">
+      <h3>Carta Negra:</h3>
+      <div id="black-card">...</div>
+      <h3>Cartas Blancas:</h3>
+      <div id="white-cards">...</div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
